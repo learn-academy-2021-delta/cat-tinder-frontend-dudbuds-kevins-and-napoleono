@@ -2,53 +2,45 @@ let duds = [
     {
       id: 1,
       name: "Napoleon", 
-      scrub_hanging_out_the_side_of_his_best_friends_ride: 
-      enjoys: "Surfing"
+      hobbies: ""
     },
     {
       id: 2,
       name: "Kevin",
-      driver:
-      enjoys: ""
+      hobbies: ""
     },
     {
       id: 3,
       name: "Anthony",
-      driver:
-      enjoys: ""
+      hobbies: ""
     },
     {
       id: 4,
       name: "Brandon",
-      driver: 
-      enjoys: ""
+      hobbies: ""
     },
     {
       id: 5,
       name: "Ross",
-      scrub_hanging_out_the_side_of_his_best_friends_ride:
-      enjoys: ""
+      hobbies: ""
     },
     {
       id: 6,
       name: "John",
-      city: 
-      enjoys: ""
+      hobbies: ""
     },
     {
       id: 7,
       name: "Phil",
-      scrub_hanging_out_the_side_of_his_best_friends_ride: 
-      enjoys: ""
+      hobbies: ""
     },
     {
       id: 8,
-      name: "Ato",
-      driver: 
-      enjoys: ""
-    },
-    {
+      name: "Ato", 
+      hobbies: ""
+    }
+    
+]
 
-  ]
-  export default Duds
+  export default duds
   
