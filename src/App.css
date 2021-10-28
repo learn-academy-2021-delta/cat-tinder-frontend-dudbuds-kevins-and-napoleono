@@ -52,11 +52,11 @@ code {
 }
 
  Footer {
-    font-size: 40px;
+    font-size: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #FFFEF1;
+    background-color: #d3d3d3;
     display: flex;
     justify-content: space-around;
  }
