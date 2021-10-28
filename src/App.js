@@ -14,15 +14,14 @@ import {
   Switch
 } from 'react-router-dom'
 import './App.css';
-import Duds from './mockDud.js'
-import { render } from '@testing-library/react';
+import duds from './mockDud.js'
 
 
 class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      duds: Duds
+      duds: duds
     }
   }
 

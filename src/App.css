@@ -17,16 +17,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(20px + 2vmin);
+  font-size: calc(30px + 2vmin);
   color: #000000;
 }
-
-/* body {
-  margin: 0;
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
 
 code {
   font-family: "Courier New", Courier;
@@ -51,7 +44,7 @@ code {
   border-radius: 10px;
 }
 
- Footer {
+ footer {
     font-size: 20px;
     position: fixed;
     bottom: 0;

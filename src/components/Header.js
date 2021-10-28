@@ -16,7 +16,7 @@ class Header extends Component {
               <ul>
                 <NavLink to="/dudIndex">Meet the Duds</NavLink>
               </ul>
-              <ul><NavLink to="dudNew">Add A Bud</NavLink>
+              <ul><NavLink to="dudNew">Add a Bud</NavLink>
             </ul>
           </div>
         </header>
