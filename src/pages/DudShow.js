@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 
-
-
-
 class DudShow extends Component {
   render() {
     return (

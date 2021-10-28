@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
-import dudLogo from ''
+import dudLogo from '../assets/dud-logo.jpg'
+import { logDOM } from '@testing-library/dom'
 
 
 class Header extends Component {

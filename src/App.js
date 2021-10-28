@@ -6,7 +6,7 @@ import DudIndex from './pages/DudIndex'
 import DudShow from './pages/DudShow'
 import DudNew from './pages/DudNew'
 import DudEdit from './pages/DudEdit'
-import DudNotFound from './pages/DudNotFound'
+import NotFound from './pages/NotFound'
 
 import {
   BrowserRouter as Router,
@@ -22,25 +22,25 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      duds: duds
+      duds: Duds
     }
   }
 
-      render() {
-        console.log(this.state.duds)
-                return (
-                  <Router>
-                      <Header />
-                      <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route path="/dudindex" component={DudIndex} />
-                        <Route path="/dudshow" component={DudShow} />
-                        <Route path="/dudnew" component={DudNew} />
-                       <Route path="/dudedit" component={DudEdit}/>
-                      <Route component= {DudNotFound}/>
-                    </Switch>
-                  <Footer />
-             </Router>
+    render() {
+      console.log(this.state.duds)
+        return (
+          <Router>
+            <Header />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/dudindex" component={DudIndex} />
+                <Route path="/dudshow" component={DudShow} />
+                <Route path="/dudnew" component={DudNew} />
+                <Route path="/dudedit" component={DudEdit}/>
+                <Route component= {NotFound}/>
+              </Switch>
+            <Footer />
+          </Router>
     )
   }
 }
