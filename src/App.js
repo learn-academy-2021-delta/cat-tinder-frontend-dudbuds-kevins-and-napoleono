@@ -1,25 +1,46 @@
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Home from './pages/Home'
+import DudIndex from './pages/DudIndex'
+import DudShow from './pages/DudShow'
+import DudNew from './pages/DudNew'
+import DudEdit from './pages/DudEdit'
+import NotFound from './pages/NotFound'
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom'
 import './App.css';
+import duds from './mockDud.js'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      duds: duds
+    }
+  }
+
+    render() {
+      console.log(this.state.duds)
+        return (
+          <Router>
+            <Header />
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/dudindex" component={DudIndex} />
+                <Route path="/dudshow" component={DudShow} />
+                <Route path="/dudnew" component={DudNew} />
+                <Route path="/dudedit" component={DudEdit}/>
+                <Route component= {NotFound}/>
+              </Switch>
+            <Footer />
+          </Router>
+    )
+  }
 }
-
-export default App;
+export default App
