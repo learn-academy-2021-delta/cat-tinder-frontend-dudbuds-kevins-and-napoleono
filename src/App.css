@@ -1,23 +1,24 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 20;
+  padding: 20;
   font-family: "Courier New", Courier, "monospace";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;}
 .page-body {
   text-align: center;
   margin: 3rem;
-  height: 110vh;
+  height: 80vh;
+  
 }
 
 header {
   background-color: #6de9d4;
-  min-height: 100vh;
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(30px + 2vmin);
+  font-size: calc(20px + 2vmin);
   color: #000000;
 }
 
@@ -52,5 +53,6 @@ code {
     background-color: #d3d3d3;
     display: flex;
     justify-content: space-around;
+    text-align: center;
  }
 
