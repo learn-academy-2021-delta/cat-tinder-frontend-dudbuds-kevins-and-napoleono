@@ -4,7 +4,7 @@ class DudEdit extends Component {
   render() {
     return (
       <>
-        <h3>I am the Dud Edit</h3>
+        <h3>EDIT YOUR PROFILE</h3>
       </>
     )
   }

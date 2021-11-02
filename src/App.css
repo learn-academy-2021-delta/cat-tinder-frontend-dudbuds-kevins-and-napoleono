@@ -1,56 +1,103 @@
-* {
+*{
   margin: 0;
   padding: 0;
-  font-family: "Courier New", Courier, "monospace";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;}
-.page-body {
-  text-align: center;
-  margin: 3rem;
-  height: 110vh;
+  font-family:'Courier New', courier;
 }
+.page-body {
+  background-color: #B0B8B4FF;
+  text-align: center;
+  font-size: 40px;
+  justify-content: space-between;
+  margin: 1.5rem;
+  display: fixed;
+  padding-top: 10px;
+  padding-bottom: 1px;
+}
+.buddy-up {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+
 
 header {
-  background-color: #6de9d4;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+font-size: 30px;
+text-align: center;
+background-color: #FC766AFF;
+display: fixed;
+justify-content: space-between;
+padding-top: 5px;
+padding-bottom: 0px;
+}
+.dud-logo{
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+.nav-links {
+  display: fixed;
+  flex-direction:row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(30px + 2vmin);
-  color: #000000;
-}
-
-code {
-  font-family: "Courier New", Courier;
-}
-
-
-.dud-logo {
-  width: 300px;
-  margin-left: 20px;
-}
-
-.nav-link {
-  color: #6de9d4;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
   padding-right: 50px;
+  color: #FC766AFF;
+  background-color:#FC766AFF;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 0px;
 }
+
+/* ---NAV--- */
+
+.btn.btn-secondary {
+  background-color: #B0B8B4FF;
+  font-weight: bolder;
+  margin: 5px;
+}
+.btn.btn-secondary:hover {
+  color: #B0B8B4FF;
+  background-color:#000000;
+}
+
 .nodud-bud {
-  width: 400px;
-  border: 1px solid black;
-  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
 }
 
- footer {
-    font-size: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #d3d3d3;
-    display: flex;
-    justify-content: space-around;
- }
+form {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+input {
+  text-align: center;
+}
+div.form-group {
+  margin-bottom: 15px;
+}
 
+footer {
+  font-size: 20px;
+  position: flex;
+  bottom: 0;
+  width: 100%;
+  background-color:#184A45FF;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.card-show.card.card-body {
+  margin: 0 auto;
+}
+
+.index-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.card.card-body {
+  width: 300px;
+  background-color: #B0B8B4FF;
+  margin: 20px;
+}

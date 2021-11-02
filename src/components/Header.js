@@ -11,11 +11,12 @@ class Header extends Component {
           <NavLink to="/">
             <img src={dudLogo} alt="logo for DudBud" className="dud-logo"/>
             </NavLink>
+            <br/>
             <div className="nav-links">
               <ul>
-                <NavLink to="/dudIndex">Meet the Duds</NavLink>
+                <NavLink to="/dudIndex">Meet The Duds</NavLink>
               </ul>
-              <ul><NavLink to="dudNew">Add a Bud</NavLink>
+              <ul><NavLink to="dudNew">Make A Profile</NavLink>
             </ul>
           </div>
         </header>

@@ -4,7 +4,7 @@ class DudIndex extends Component {
   render() {
     return (
       <>
-        <h3>I Am The Dud Index</h3>
+        <h3>Meet The Duds</h3>
       </>
     )
   }
