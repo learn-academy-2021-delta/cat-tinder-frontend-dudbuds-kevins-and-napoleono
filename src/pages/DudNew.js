@@ -28,7 +28,7 @@ class DudNew extends Component {
   render() {
     return (
       <div className="page-body">
-      <h3>Become A Dud's Bud</h3>
+      <h3>Become A Dud Bud</h3>
         <Form>
           <FormGroup>
             <Label for="name">Name</Label>
@@ -43,8 +43,10 @@ class DudNew extends Component {
           <FormGroup>
             <Label for="age">Age</Label>
             <Input
-            type="interger"
+            type="number"
             name="age"
+            min="18"
+            max="80"
             onChange={this.handleChange}
             value={this.state.form.age}/>
           </FormGroup>
@@ -61,8 +63,7 @@ class DudNew extends Component {
           </FormGroup>
             <Button
             name="submit"
-            onClick={this.handleSubmit}
->
+            onClick={this.handleSubmit}>
             New Profile
             </Button>
             </Form>
