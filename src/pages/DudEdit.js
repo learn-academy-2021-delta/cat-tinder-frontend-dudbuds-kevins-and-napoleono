@@ -6,6 +6,7 @@ class DudEdit extends Component {
       <>
         <h3>EDIT YOUR PROFILE</h3>
       </>
+      
     )
   }
 }

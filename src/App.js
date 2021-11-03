@@ -33,6 +33,13 @@ class App extends Component{
                 <Route path="/dudindex" component={DudIndex} />
                 <Route path="/dudshow" component={DudShow} />
                 <Route path="/dudnew"render={(props) => <DudNew createNewDud={this.createNewDud} />} />
+                <Route path="/dudindex" render={(props) => <DudIndex duds={this.state.duds} />} />
+                <Route path="/dudshow/:id" render={(props) => {
+                  let id = props.match.params.id
+                  let dud = this.state.duds.find(dud => dud.id === +id)
+                  return <DudShow dud={dud} />
+                }} />
+                <Route path="/dudnew" component={DudNew} />
                 <Route path="/dudedit" component={DudEdit}/>
                 <Route component= {NotFound}/>
               </Switch>
