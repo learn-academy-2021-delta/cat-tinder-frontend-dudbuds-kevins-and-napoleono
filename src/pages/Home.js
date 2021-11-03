@@ -9,7 +9,7 @@ class Home extends Component {
         <br />
         <h3>We Are The Friend, Of The Friendless</h3>
       <br />
-      <h3><img src={buddyup} alt="Buddy Up" className="buddyup-bud" /></h3>
+      <img src={buddyup} alt="Buddy Up" className="buddyup-bud" />
       </div>
     )
   }

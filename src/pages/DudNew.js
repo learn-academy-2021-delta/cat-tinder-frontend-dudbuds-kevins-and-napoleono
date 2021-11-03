@@ -5,13 +5,13 @@ import { Redirect } from 'react-router-dom'
 class DudNew extends Component {
   constructor(props){
     super(props)
-    this.state = {
-      form:{
+      this.state = {
+        form:{
         name: "",
         age: "",
         hobbies: ""
       },
-      submitted: false
+        submitted: false
     }
   }
   
@@ -27,51 +27,48 @@ class DudNew extends Component {
   
   render() {
     return (
-    <div className="page-body">
-    <h3>Become A Dud's Bud</h3>
-    <Form>
-    <FormGroup>
-    <Label for="name">Name</Label>
-    <Input
-    type="text"
-    name="name"
-    onChange={this.handleChange}
-    value={this.state.form.name}
-    />
-  </FormGroup>
-   </Form>
-   <Form>
-  <FormGroup>
-    <Label for="age">Age</Label>
-    <Input
-      type="interger"
-      name="age"
-      onChange={this.handleChange}
-    value={this.state.form.age}
-    />
-  </FormGroup>
-</Form>
-<Form>
-  <FormGroup>
-    <Label for="hobbies">Hobbies</Label>
-    <Input
-      type="text"
-      name="hobbies"
-      onChange={this.handleChange}
-    value={this.state.form.hobbies}
-    />
-  </FormGroup>
-  <Button
-  name="submit"
-  onClick={this.handleSubmit}
+      <div className="page-body">
+      <h3>Become A Dud's Bud</h3>
+        <Form>
+          <FormGroup>
+            <Label for="name">Name</Label>
+            <Input
+              type="text"
+              name="name"
+              onChange={this.handleChange}
+              value={this.state.form.name}/>
+          </FormGroup>
+        </Form>
+        <Form>
+          <FormGroup>
+            <Label for="age">Age</Label>
+            <Input
+            type="interger"
+            name="age"
+            onChange={this.handleChange}
+            value={this.state.form.age}/>
+          </FormGroup>
+        </Form>
+        <Form>
+          <FormGroup>
+            <Label for="hobbies">Hobbies</Label>
+            <Input
+            type="text"
+            name="hobbies"
+            onChange={this.handleChange}
+            value={this.state.form.hobbies}
+            />
+          </FormGroup>
+            <Button
+            name="submit"
+            onClick={this.handleSubmit}
 >
-  New Profile
-</Button>
-</Form>
-{this.state.submitted && <Redirect to="/dudindex" />}
-
-      </div>
-    )
-  }
-}
+            New Profile
+            </Button>
+            </Form>
+              {this.state.submitted && <Redirect to="/dudindex" />}
+            </div>
+          )
+        }
+      }
 export default DudNew
